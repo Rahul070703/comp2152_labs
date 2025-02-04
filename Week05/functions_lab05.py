@@ -26,3 +26,13 @@ def use_loot(belt, health_option):
     else:
         print("You used " + first_item + " but its not effective")
     return belt, health_option
+
+# Recursion
+def inception_dream(num_dream_lvls):
+    num_dream_lvls = int(num_dream_lvls)
+    if num_dream_lvls == 1 :
+        print("you are in the deepest dream level now")
+    else:
+        return 1 + int (inception_dream(num_dream_lvls - 1))
+    
+
